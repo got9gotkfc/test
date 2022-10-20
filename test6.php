@@ -26,6 +26,6 @@ function twoSum($nums, $target)
   
   
 }
-$nums=[1,2,3,4,5];
+$nums=[1,2,3,4,4];
 $target=8;
 twoSum($nums,$target);
