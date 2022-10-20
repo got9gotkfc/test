@@ -5,7 +5,7 @@ $I=[];
 
 
 $au=array_unique($a);
-print_r($au);
+// print_r($au);
 sort($au);
 // 交集
 for ($i=0; $i <count($au) ; $i++) { 
@@ -15,8 +15,9 @@ for ($i=0; $i <count($au) ; $i++) {
     }
   }
 }
-
+echo "交集";
 print_r($I);
+echo "<br>";
 //
 // 差集
 for ($k=0; $k <count($b) ; $k++) { 
@@ -32,12 +33,14 @@ for ($l=0; $l <$alen ; $l++) {
     }
   }
 }
+echo "差集";
 print_r($a);
+echo "<br>";
 //
 //聯集
 for ($n=0; $n <count($I) ; $n++) { 
-  array_push($a,$I[$i]);
+  array_push($a,$I[$n]);
 }
-
+echo "聯集";
 print_r($a);
 ?>
