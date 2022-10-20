@@ -31,10 +31,30 @@ class car extends Transportation{
     
     public $door=4;
     public $tire=4;
+    public $engine="3000cc";
 
 
     function direction($turnsignal){
      parent::direction($turnsignal);
     }
-  
+    function rule($sign){
+        if($sign=="red"){
+           $stop=true;
+        }
+       }
+}
+class scooter extends Transportation{
+    
+    public $door=0;
+    public $tire=2;
+    public $engine="125cc";
+
+    function direction($turnsignal){
+    parent::direction($turnsignal);
+    }
+    function rule($sign){
+        if($sign=="red"){
+           $stop=true;
+        }
+       }
 }
